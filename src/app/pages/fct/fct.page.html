@@ -1,0 +1,21 @@
+<ion-content>
+  <ion-card>
+    <ion-item *ngFor= "let element of card">
+      <ion-icon name="pin" slot="start"></ion-icon>
+      <ion-label>{{element.title}}</ion-label>
+      <ion-button fill="outline" slot="end">View</ion-button>
+      <ion-card-content>
+        {{element.txt}}
+      </ion-card-content>
+    </ion-item>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="settings"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="start" >
+      <ion-fab-button *ngFor = "let element of fab" href={{element.link}} target="_blank"><ion-icon name={{element.icon}}></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

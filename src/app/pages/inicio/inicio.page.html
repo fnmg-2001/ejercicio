@@ -1,0 +1,5 @@
+<app-cabecera titulo="Inicio">{{titulo}}</app-cabecera>
+
+<ion-content>
+    <ion-button *ngFor="let element of elementos" routerLink={{element.ruta}} expand="full" color={{element.color}} shape="round">{{element.titulo}}</ion-button>
+</ion-content>

@@ -1,0 +1,24 @@
+<app-cabecera titulo="Datos Personales">{{titulo}}</app-cabecera>
+
+<ion-content>
+  <ion-item *ngFor="let element of elementos">
+    <ion-label>Nombre:</ion-label>
+    <ion-input> {{element.nombre}}</ion-input>
+  </ion-item>
+  <ion-item *ngFor="let element of elementos"> 
+    <ion-label>Localidad:</ion-label>
+    <ion-input> {{element.localidad}}</ion-input>
+  </ion-item>
+  <ion-item *ngFor="let element of elementos">
+    <ion-label>Estudios cursados:</ion-label>
+    <ion-input>{{element.estudios}}</ion-input>
+  </ion-item>
+  <ion-item *ngFor="let element of elementos">
+    <ion-label>Email:</ion-label>
+    <ion-input>{{element.email}}</ion-input>
+  </ion-item>
+  <ion-item *ngFor="let element of elementos">
+    <ion-label>Contraseña:</ion-label>
+    <ion-input>{{element.contrasena}}</ion-input>
+  </ion-item>
+</ion-content>

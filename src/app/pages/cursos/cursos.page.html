@@ -1,0 +1,11 @@
+<app-cabecera titulo="Cursos">{{titulo}}</app-cabecera>
+<ion-content>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button *ngFor="let element of elementos" tab={{element.tab}}>
+        <ion-icon name={{element.icon}}></ion-icon>
+        <ion-label>{{element.titulo}}</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
